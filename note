@@ -15,7 +15,7 @@ mkdir -p ~/Desktop/Notes
 
 dt=$(date '+%d-%m-%y_%H:%M:%S')
 fa="_$1"
-fn=$dt$fa
+fn=$dt$fa.txt
 
 touch $fn
 
