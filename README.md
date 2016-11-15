@@ -12,7 +12,7 @@ Author: Cody Patterson   GitHub: code-ee
 
 Quick Start Instructions:
 --------------------------------------------------------------------
-1. Navigate into the cloned repository
+1. Navigate into the cloned repository.
 
 2. Place the shell script called "note" in the /usr/bin/ directory
    using the following command:
