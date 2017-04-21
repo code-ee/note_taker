@@ -1,22 +1,25 @@
+# note
 
-Program Description:
---------------------------------------------------------------------
-This program is for taking quick notes. By default, the filename
-will be the date and time the note was taken. Optionally, the user
-can input one argument that will be appended to the end of the
-filename. All notes will be placed in a directory on the user's
-desktop called "Notes". If the directory doesn't exist, it will
-created automatically.
+### Program Description
+This program is for taking quick notes. All notes will be placed in a
+directory on the user's desktop called "Notes". If the directory
+doesn't exist, it will created automatically.
 
-Author: Cody Patterson   GitHub: code-ee
+### Installation
+To install this script, simply run the install.sh via command line:
 
-Quick Start Instructions:
---------------------------------------------------------------------
-1. Navigate into the cloned repository.
+1. Navigate to the cloned repository if not already there:
 
-2. Place the shell script called "note" in the /usr/bin/ directory
-   using the following command:
+    `cd /path/to/note`
 
-       $sudo mv note /usr/bin/
+2. Run the install script:
 
-3. Restart your terminal.
+    `./install.sh`
+
+3. Restart your terminal (this updates your PATH environment variable)
+
+### Using note
+After installing, by default, the filename will be the date and time
+the note was taken. Optionally, you can input one argument that
+will be appended to the end of the filename. All other arguments after
+the first will be ignored.

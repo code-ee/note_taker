@@ -11,19 +11,23 @@
 # Author: Cody Patterson   GitHub: code-ee                             #
 #**********************************************************************#
 
-mkdir -p ~/Desktop/Notes
-
+fp="~/Desktop/Notes"
 dt=$(date '+%d-%m-%y_%H:%M:%S')
 fa="_$1"
 fn=$dt$fa.txt
 
+mkdir -p $fp
+
 touch $fn
 
+# if you prefer using another editor, change 'vim' to 'emacs' or 'nano'
 vim -c 'startinsert' $fn
 
 wait
 
 mv $fn ~/Desktop/Notes
 
-unset dt; unset fa; unset fn;
+echo "$fn has been saved to $fp"
+
+unset dt; unset fa; unset fn; unset fp;
 
